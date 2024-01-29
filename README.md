@@ -1,2 +1,2 @@
-# estheticsDisplay
-Production branch of esthetics project front end
+# EstheticsDisplay Dev
+Development branch of esthetics project front end
