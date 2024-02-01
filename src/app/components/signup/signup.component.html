@@ -1,0 +1,48 @@
+
+<!-- app.component.html -->
+ <!--
+<div class="container">
+    <h1>Sign Up</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+  
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" required>
+  
+      <button type="submit">Sign Up</button>
+    </form>
+  
+    <p>Already have an account? <a routerLink="/signin">Sign In</a></p>
+  </div>
+  
+  signup.component.html -->
+  <div class="container">
+    <h1>Sign Up</h1>
+  <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
+    <!-- Your input fields here -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+    <label for="name">Surname:</label>
+    <input type="text" id="surname" name="surname" [(ngModel)]="user.surname" required>
+    <label for="name">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+    <label for="name">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="user.password" required>
+    <label for="name">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" required>
+  
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a routerLink="/signin">Sign In</a></p>
+</div>
+  
