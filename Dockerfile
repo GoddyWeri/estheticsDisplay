@@ -11,5 +11,5 @@ COPY --from=builder /usr/src/app .
 COPY ./src ./src
 COPY ./angular.json ./tsconfig.json ./tsconfig.app.json ./
 RUN npm run build
-EXPOSE 3000
+EXPOSE 4200
 CMD ["npm", "start"]
